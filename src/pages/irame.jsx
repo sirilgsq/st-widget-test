@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import FloatingButton from "../comp/floating-button";
 
 export default function IframeWidget() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -124,7 +125,8 @@ export default function IframeWidget() {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+      <div className="min-h-screen bg-white">
+          {/* <FloatingButton/> */}
       {/* Navigation */}
       <nav className="bg-white shadow-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
