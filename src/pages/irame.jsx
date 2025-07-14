@@ -9,9 +9,10 @@ export default function IframeWidget() {
 
   const iframeRef = useRef(null);
   const API_KEY = "4cfb9744c5b5a7c67711";
-  const INVEST_KEY = "f0c2b883c58ebabf94ca";
+  const INVEST_KEY = "3fe06bae5616af5ca6a0";
   const TYPE = "";
-  const BASE_URL = "https://develop.d38xffcv058jap.amplifyapp.com";
+  const BASE_URL = "http://localhost:5174";
+//   const BASE_URL = "https://develop.d38xffcv058jap.amplifyapp.com";
     const LANG = "en";
     // ?api_key=&invest_key=&lang=de
 
