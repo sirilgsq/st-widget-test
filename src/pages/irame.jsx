@@ -8,13 +8,23 @@ export default function IframeWidget() {
   const [priceRange, setPriceRange] = useState("any"); 
 
   const iframeRef = useRef(null);
-  const API_KEY = "4cfb9744c5b5a7c67711";
-  const INVEST_KEY = "3fe06bae5616af5ca6a0";
-  const TYPE = "";
-  const BASE_URL = "http://localhost:5174";
+  const API_KEY = "56cd43841a2ead516c8f";
+  // const API_KEY = "4cfb9744c5b5a7c67711";
+  // const INVEST_KEY = "f9df285f9c126c4687bf"; 
+  
+  const INVEST_KEY = "dcf5ecf0749cb0250947"; 
+  // const INVEST_KEY = "f0c2b883c58ebabf94ca";
+  // const TYPE = "HT59F1"; // flow 1
+  // const TYPE = "J47GE4"; // flow 2
+  // const TYPE = "K5RWO5"; // flow 3
+  const TYPE = "L58GJ7"; // flow 4
+  // const TYPE = "K5RWO5"; //portfolio
+  const BASE_URL = "https://main.d250vdfq5goydm.amplifyapp.com";
+  // const BASE_URL = "http://localhost:5174";
 //   const BASE_URL = "https://develop.d38xffcv058jap.amplifyapp.com";
     const LANG = "en";
     // ?api_key=&invest_key=&lang=de
+    
 
   useEffect(() => {
     const handleMessage = (event) => {
@@ -404,17 +414,26 @@ export default function IframeWidget() {
       </div>
 
       <div className="flex w-full justify-center items-center h-full bg-red-300 mx-auto relative overflow-hidden">
-        <iframe
+        {/* <iframe
           ref={iframeRef}
           id="st_invest_widget"
-          //   http://localhost:5174?api_key=4cfb9744c5b5a7c67711&invest_key=f0c2b883c58ebabf94ca&lang=de
-          src={`${BASE_URL}?api_key=${API_KEY}&invest_key=${INVEST_KEY}&lang=${LANG}`}
+          src={`${BASE_URL}?api_key=${API_KEY}&invest_key=${INVEST_KEY}&&lang=${LANG}&&type=${TYPE}`}
           allow="camera;microphone;clipboard-write"
           sandbox="allow-scripts allow-same-origin allow-forms allow-popups"
           className="w-full"
         >
           {" "}
-        </iframe>
+          const API_KEY = "88e96aa0ce3922d50de5";
+  const INVEST_KEY = "b8ec5842af92914edabc";
+  const TYPE = "L58GJ7";
+  // const BASE_URL = "https://stage.dgrpph18b84d2.amplifyapp.com";
+  const BASE_URL = "http://localhost:5174";
+    // const BASE_URL = "https://feature-
+        </iframe> */}
+        <iframe id="st_invest_widget"
+      src="https://feature-v2.d38onhkd901zl7.amplifyapp.com/?api_key=88e96aa0ce3922d50de5&invest_key=b8ec5842af92914edabc"
+      allow="camera;microphone;clipboard-write" sandbox="allow-scripts allow-same-origin allow-forms allow-popups">
+</iframe>
       </div>
 
       {/* Featured Properties */}
